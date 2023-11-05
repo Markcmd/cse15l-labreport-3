@@ -52,7 +52,7 @@
 
 ### Part 2
 
-I choose command grep, and option -i,  
+I choose command grep, and option -i, -v, -l, -x.
 
 + -i
 
@@ -218,6 +218,20 @@ I choose command grep, and option -i,
       ```
       I randomly add "        a" in some file this code outputs the all file name that cotain identical string "        a".
       
+### Works Cited
+1. https://man7.org/linux/man-pages/man1/grep.1.html
+2. Chatgpt
+
++ Steps
+  1. Ask Chatgpt: what are the four simplest and interesting grep options, except -r ? (it gave me -i, -v, -n, -c )
+  2. read file in man7.org
+  3. Ask Chatgpt: -i, --ignore-case.  What is  "--ignore-case" ? is this a code ?  (it say The short form of --ignore-case is -i, and you can use either one when running grep. They both have the same effect:)
+  4. read file in man7.org
+  5. Ask Chatgpt: what does -l do ? (... When you use grep -l followed by the pattern and the file(s), it will not show the matching lines themselves but will instead display the filenames that contain the pattern. ...)
+  6. Ask: is this a directory ?    filename/* (The notation filename/* is generally used to denote a pattern that matches all files within a directory named filename. Here's what each part of the pattern signifies:...)
+  7. read
+  8. Ask: how to use -x (The -x option in grep is used to match lines that exactly match the given pattern. When using -x, grep will only return the lines where the entire line is identical to the pattern, rather than lines that contain the pattern along with other content....)
+
 
 
 
